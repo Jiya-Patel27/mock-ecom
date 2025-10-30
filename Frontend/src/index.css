@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #d4d4d6;
+  color: #222;
+}
+
+.header {
+  padding: 5px;
+  background: #111827;
+  color: white;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* product grid */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  width: 950px;
+  max-width: 100%;
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #111827;
+  color: white;
+}
+
+.btn:hover {
+  background: #132146;
+}
+
+.btn_remove {
+  margin-left: 8px;
+  background: #b91c1c;
+}
+
+.btn_remove:hover {
+  background: rgb(163, 16, 16);
+}
+
+.cart {
+  width: 320px;
+  min-width: 280px;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .08);
+  height: fit-content;
+}
+
+.cart h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.cart-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.small {
+  font-size: 13px;
+  color: #666;
+}
+
+.total {
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+@media (max-width: 1370px) {
+  .products {
+    width: 760px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .products {
+    width: 500px;
+  }
+}
+
+/* mobile */
+@media (max-width: 880px) {
+  .card img {
+    height: 200px;
+  }
+
+  .products {
+    width: 100%;
+  }
+
+  .cart{
+    width: 120px;
+  }
+}
