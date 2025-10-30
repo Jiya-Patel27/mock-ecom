@@ -138,7 +138,7 @@ Visit the frontend URL shown in the terminal (usually `http://localhost:5173/`).
 
 | Products | Cart | Checkout Modal |
 |----------------|------------|----------------|
-| ![Products](Frontend\public\products.png) | ![Cart](Frontend\public\cart.png) | ![Checkout](Frontend\public\checkout.png) |
+| ![Products](Frontend/public/products.png) | ![Cart](Frontend/public/cart.png) | ![Checkout](Frontend/public/checkout.png) |
 
 ---
 
